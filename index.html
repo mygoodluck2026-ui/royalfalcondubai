@@ -1,40 +1,234 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Royal Falcon Delivery</title>
+
+<title>Royal Falcons Courier Dubai</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#b30000;
+color:white;
+padding:25px;
+text-align:center;
+font-size:32px;
+font-weight:bold;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d") center/cover;
+height:300px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:30px;
+font-weight:bold;
+text-shadow:0 0 10px black;
+}
+
+.section{
+padding:40px;
+text-align:center;
+}
+
+.track-box{
+background:white;
+width:320px;
+margin:auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+input{
+width:90%;
+padding:10px;
+margin-bottom:10px;
+border:1px solid #ccc;
+}
+
+button{
+padding:12px 20px;
+background:#b30000;
+color:white;
+border:none;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#800000;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.service-box{
+background:white;
+width:250px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact{
+background:white;
+width:320px;
+margin:auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+
 </head>
 
-<body style="font-family:Arial;text-align:center;background:#f4f4f4">
+<body>
 
-<h1>Royal Falcon Delivery</h1>
-<p>Fast International Courier Service</p>
+<header>
+Royal Falcons Courier Dubai
+</header>
 
-<h2>Track Your Package</h2>
+<div class="hero">
+Fast Global Courier & Logistics
+</div>
+
+<div class="section">
+
+<h2>Track Your Shipment</h2>
+
+<div class="track-box">
 
 <input id="track" placeholder="Enter Tracking Number">
 
-<button onclick="track()">Track</button>
+<br>
+
+<button onclick="track()">Track Package</button>
 
 <p id="result"></p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="service-box">
+<h3>Air Freight</h3>
+<p>Fast worldwide air cargo delivery.</p>
+</div>
+
+<div class="service-box">
+<h3>International Shipping</h3>
+<p>Reliable global courier services.</p>
+</div>
+
+<div class="service-box">
+<h3>Package Tracking</h3>
+<p>Track your parcel anytime online.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Contact Us</h2>
+
+<div class="contact">
+
+<p><strong>Email:</strong><br>
+<a href="mailto:royalfalconscourierdubai@gmail.com">
+royalfalconscourierdubai@gmail.com
+</a></p>
+
+<p><strong>WhatsApp:</strong><br>
++44 7721 736451
+</p>
+
+<p><strong>Office Address:</strong><br>
+Zabeel 2, Zabeel<br>
+Dubai, United Arab Emirates
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+Royal Falcons Courier Dubai © 2026  
+Global Logistics & Courier Services
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/447721736451">
+Chat on WhatsApp
+</a>
 
 <script>
 
 function track(){
 
-let code = document.getElementById("track").value;
+let code=document.getElementById("track").value;
 
 if(code=="RF1001"){
-document.getElementById("result").innerHTML =
+document.getElementById("result").innerHTML=
 "Dubai → London → New York → Delivered";
 }
 
 else if(code=="RF1002"){
-document.getElementById("result").innerHTML =
+document.getElementById("result").innerHTML=
 "Dubai → Germany → Canada → In Transit";
 }
 
+else if(code=="RF1003"){
+document.getElementById("result").innerHTML=
+"China → Dubai → UK → In Transit";
+}
+
 else{
-document.getElementById("result").innerHTML =
+document.getElementById("result").innerHTML=
 "Tracking number not found";
 }
 
@@ -43,4 +237,5 @@ document.getElementById("result").innerHTML =
 </script>
 
 </body>
+
 </html>
