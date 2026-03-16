@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Royal Falcon Delivery</title>
+</head>
+
+<body style="font-family:Arial;text-align:center;background:#f4f4f4">
+
+<h1>Royal Falcon Delivery</h1>
+<p>Fast International Courier Service</p>
+
+<h2>Track Your Package</h2>
+
+<input id="track" placeholder="Enter Tracking Number">
+
+<button onclick="track()">Track</button>
+
+<p id="result"></p>
+
+<script>
+
+function track(){
+
+let code = document.getElementById("track").value;
+
+if(code=="RF1001"){
+document.getElementById("result").innerHTML =
+"Dubai → London → New York → Delivered";
+}
+
+else if(code=="RF1002"){
+document.getElementById("result").innerHTML =
+"Dubai → Germany → Canada → In Transit";
+}
+
+else{
+document.getElementById("result").innerHTML =
+"Tracking number not found";
+}
+
+}
+
+</script>
+
+</body>
+</html>
